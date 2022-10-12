@@ -9,6 +9,9 @@ console.log("zhixin");
 
 export default defineConfig({
   plugins: [vue(), vueJsx(), Unocss()],
+  optimizeDeps: {
+    exclude: ["vue-demi"],
+  },
   build: {
     rollupOptions: {
       external: ["vue", "vue-router"],
