@@ -10,7 +10,7 @@ console.log("zhixin");
 export default defineConfig({
   plugins: [vue(), vueJsx(), Unocss()],
   optimizeDeps: {
-    exclude: ["vue-demi"],
+    // exclude: ["vue-demi"],
   },
   build: {
     rollupOptions: {
